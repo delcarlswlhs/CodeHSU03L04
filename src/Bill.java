@@ -18,7 +18,10 @@ class Bill
     public void addTip()
     {
         if(totalCustomers>=8){
-            costofMeal *= 1.25;
+            costofMeal*=1.25;
+        }
+        if(totalCustomers>=4){
+            costOfMeal*=1.2;
         }
     }
 
